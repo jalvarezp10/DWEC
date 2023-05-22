@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Random User App</title>
+  <!-- Agregar los enlaces a las dependencias de Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Random User App</h1>
+    <div id="message-container"></div>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card" style="width: 18rem;">
+          <img id="user-image" class="card-img-top" alt="User Image">
+          <div class="card-body">
+            <h5 id="user-name" class="card-title"></h5>
+            <p id="user-address" class="card-text"></p>
+            <p id="user-phone" class="card-text"></p>
+            <p id="user-email" class="card-text"></p>
+            <button id="add-user-btn" class="btn btn-primary">Añadir usuario</button>
+          </div>
+        </div>
+        <button id="generate-user-btn" class="btn btn-success mt-4">Generar usuario</button>
+      </div>
+      <div class="col-md-6">
+        <h2>Usuarios</h2>
+        <table id="users-table" class="table table-striped">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Teléfono</th>
+              <th>Dirección</th>
+              <th>Email</th>
+              <th>Imagen</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+        <button id="save-users-xhr-btn" class="btn btn-primary">Guardar usuarios en BD (XMLHttpRequest)</button>
+        <button id="save-users-fetch-btn" class="btn btn-primary">Guardar usuarios en BD (Fetch)</button>
+      </div>
+    </div>
+  </div>
+    </body>
+</html>
